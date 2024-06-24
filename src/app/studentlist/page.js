@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function StudentList(){
     return(
-        <div>
+             <div>
             <h1>Student List Page</h1>
             <ul>
                 <li>
@@ -16,7 +16,7 @@ export default function StudentList(){
                 </li>
                 <li>
                     <Link href="./studentlist/chirag">Chirag</Link>
-                </li>
+                   </li>
             </ul>
         </div>
     )
