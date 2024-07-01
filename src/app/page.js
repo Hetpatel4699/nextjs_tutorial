@@ -1,15 +1,10 @@
-"use client"
-
-import Link from "next/link";
-
+// pages/_app.js or pages/_app.tsx      
 
 export default function Home() {
-
- 
-  return (
-   <main>
-    <h1>Fetch Data with API in Server Component</h1>
-    <Link href="/productlist">Go To Product List</Link>
-   </main>
-  );
-}
+    return (
+      <main>
+        <h1>Style and CSS with Next js</h1>
+        <h2>WELCOME</h2>
+      </main>
+    )
+  }
