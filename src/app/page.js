@@ -1,21 +1,19 @@
-"use client"
-import { useState } from 'react'
-import style from './style.module.css'
+import Image from "next/image"
+import Profile from '../../public/vercel.svg';
 export default function Home(){
-
-  const [color,setColor]= useState("red");
-  const {red}= style
   return(
     <main>
-      <h1 className={color=="red"?style.red:style.green}>Condition with Style</h1>
-      <h2 style={{backgroundColor:color=="red"?"red":"green"}}>Heading 2</h2>
-      <h3 id={style.orange}>Heading 3</h3>
+      <h1>Image Optimization in Next</h1>
+      {/* <Image src={Profile}
+      />
+      <img
+      src={Profile.src} /> */}
 
-      <h4 className={red}>Dummy Text</h4>
-      <h4 className={red}>Dummy Text</h4>
-      <h4 className={red}>Dummy Text</h4>
-      <h4 className={red}>Dummy Text</h4>
-      <button onClick={()=>setColor("green")}>Update Color</button>
+      <Image
+      src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=740&t=st=1719911875~exp=1719912475~hmac=997b0f3417f6cbb070c0794e807a18f7fb8392e664880942b736c730331c7f78"
+      width={200}
+      height={200}
+       />
     </main>
   )
 }
