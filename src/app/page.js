@@ -3,7 +3,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>Script Component  in Next</h1>
+      <h1>Loader In Next js</h1>
     </main>
   )
 }
