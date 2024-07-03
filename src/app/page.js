@@ -1,19 +1,22 @@
-import Image from "next/image"
-import Profile from '../../public/vercel.svg';
-export default function Home(){
-  return(
-    <main>
-      <h1>Image Optimization in Next</h1>
-      {/* <Image src={Profile}
-      />
-      <img
-      src={Profile.src} /> */}
 
-      <Image
-      src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=740&t=st=1719911875~exp=1719912475~hmac=997b0f3417f6cbb070c0794e807a18f7fb8392e664880942b736c730331c7f78"
-      width={200}
-      height={200}
-       />
+
+// Import Roboto font from next/font/google
+import { Roboto } from 'next/font/google'
+
+// Call Roboto at the module scope and assign it to a constant
+const roboto = Roboto({
+  weight: "100",
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+// Define the Home component
+export default function Home() {
+  return (
+    <main>
+      <h1>Font Optimization in Nextjs</h1>
+      {/* <h1 style={{fontFamily:'Roboto',fontWeight:100}}>Font with Link Tag in Nextjs</h1> */}
+      <h1 className={roboto.className}>Font with Next js font feature</h1>
     </main>
   )
 }
