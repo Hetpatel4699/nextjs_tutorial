@@ -2,8 +2,7 @@ export default async function Page() {
 
   return (
     <div>
-      <h1>Static Page in Next</h1>
-      <img src="./dummy.jpeg"/>
+      <h1>Export Static HTML Page with Build</h1> 
     </div>
   );
 }
