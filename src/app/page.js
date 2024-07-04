@@ -1,9 +1,9 @@
+export default async function Page() {
 
-// Define the Home component
-export default function Home() {
   return (
-    <main>
-      <h1>Loader In Next js</h1>
-    </main>
-  )
+    <div>
+      <h1>Static Page in Next</h1>
+      <img src="./dummy.jpeg"/>
+    </div>
+  );
 }
