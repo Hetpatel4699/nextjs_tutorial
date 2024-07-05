@@ -1,8 +1,10 @@
-export default async function Page() {
+"use client"
+export default async function Home() {
 
   return (
-    <div>
-      <h1>Export Static HTML Page with Build</h1> 
-    </div>
+    <main>
+      <h1>SSG in Next js</h1> 
+    </main>
   );
 }
+
